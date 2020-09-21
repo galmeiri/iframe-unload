@@ -4,23 +4,10 @@
     <title>Child Frame</title>
     <script>
       window.addEventListener('unload', function(event) {
-        let xhr = new XMLHttpRequest();
+        const i = docuemnt.createElement('img');
+        i.src = "./test-image.jpg";
 
-        xhr.open('GET', 'https://p11.techlab-cdn.com/collect2-gal');
-
-        xhr.responseType = 'json';
-
-        xhr.send();
-
-        // the response is {"message": "Hello, world!"}
-        xhr.onload = function() {
-          let responseObj = xhr.response;
-          //alert(responseObj.message); // Hello, world!
-        };
-        
-        
-        
-        console.log('I am the 4th and last one…');
+        document.body.appendChild(i);
         
       });
     </script>
