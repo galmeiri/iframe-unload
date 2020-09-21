@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <script type="text/javascript" src="https://rawcdn.githack.com/galmeiri/iframe-unload/c963136abdd67753d2150ea9bc58d527e51264a2/unload.js">
+<html>
+  <head>
+    <title>Child Frame</title>
+    <script>
+      window.addEventListener('unload', function(event) {
+        console.log('I am the 4th and last one…');
+      });
     </script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+      ☻
+  </body>
 </html>
