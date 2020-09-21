@@ -4,23 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <script type="text/javascript">
-    window.addEventListener("unload", ()=>{
-        let xhr = new XMLHttpRequest();
-
-        xhr.open('GET', '/galmeirigalmeirigalmeiri');
-
-        xhr.responseType = 'json';
-
-        xhr.send();
-
-        // the response is {"message": "Hello, world!"}
-        xhr.onload = function() {
-          let responseObj = xhr.response;
-          //alert(responseObj.message); // Hello, world!
-        };
-
-    });
+    <script type="text/javascript" src="https://rawcdn.githack.com/galmeiri/iframe-unload/c963136abdd67753d2150ea9bc58d527e51264a2/unload.js">
     </script>
 </head>
 <body>
