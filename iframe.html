@@ -4,8 +4,24 @@
     <title>Child Frame</title>
     <script>
       window.addEventListener('unload', function(event) {
+        let xhr = new XMLHttpRequest();
+
+        xhr.open('GET', '/galmeirigalmeirigalmeiri');
+
+        xhr.responseType = 'json';
+
+        xhr.send();
+
+        // the response is {"message": "Hello, world!"}
+        xhr.onload = function() {
+          let responseObj = xhr.response;
+          //alert(responseObj.message); // Hello, world!
+        };
+        
+        
+        
         console.log('I am the 4th and last one…');
-        fetch("https://cashier.piesec.com/static/css/index.css?test=gal");
+        
       });
     </script>
   </head>
