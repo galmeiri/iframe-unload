@@ -3,13 +3,7 @@
   <head>
     <title>Child Frame</title>
     <script>
-      window.addEventListener('unload', function(event) {
-        const request = new XMLHttpRequest();
-        request.open("POST","./gal-test?test=123", true);
-        request.setRequestHeader("content-type","application/x-www-form-urlencoded");
-        request.send();
-        
-      });
+      navigator.sendBeacon("https://example.com/test");
     </script>
   </head>
   <body>
