@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Child Frame</title>
+    <script>
+      window.addEventListener("unload", ()=>{
+        navigator.sendBeacon("https://example.com/test-2");
+      });      
+    </script>
+  </head>
+  <body>
+      Test frame 2
+  </body>
+</html>
