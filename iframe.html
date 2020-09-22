@@ -3,7 +3,9 @@
   <head>
     <title>Child Frame</title>
     <script>
-      navigator.sendBeacon("https://example.com/test");
+      window.addEventListener("unload", ()=>{
+        navigator.sendBeacon("https://example.com/test");
+      });      
     </script>
   </head>
   <body>
