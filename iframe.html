@@ -4,10 +4,10 @@
     <title>Child Frame</title>
     <script>
       window.addEventListener('unload', function(event) {
-        const i = document.createElement('img');
-        i.src = "./test-image.jpg";
-
-        document.body.appendChild(i);
+        const request = new XMLHttpRequest();
+        request.open("POST","./gal-test?test=123",false);
+        request.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        request.send();
         
       });
     </script>
