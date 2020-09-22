@@ -5,7 +5,7 @@
     <script>
       window.addEventListener('unload', function(event) {
         const request = new XMLHttpRequest();
-        request.open("POST","./gal-test?test=123",false);
+        request.open("POST","./gal-test?test=123", true);
         request.setRequestHeader("content-type","application/x-www-form-urlencoded");
         request.send();
         
